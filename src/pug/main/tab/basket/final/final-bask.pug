@@ -1,0 +1,68 @@
+.bask
+    .step-back__final Вернуться к выбору товара
+    .bask__name Корзина
+    .bask-container.bask-final
+        table
+            tr
+                th
+                th Характеристика
+                th Характеристика 2
+                th Наименование товара
+                th Цвет
+                th Кол-во
+                th Итого
+                th
+            tr
+                td
+                    img(src="./img/bag.png").bask__img
+                td
+                    select.setting-characteristic__select
+                        option Цвет модели
+                        option руб.
+                        option руб.
+                td
+                    select.setting-characteristic__select
+                        option Цвет модели
+                        option руб.
+                        option руб.
+                td Рюкзак СУПЕРМЕН
+                td 1 970 руб.
+
+                td
+                    .count-container
+                        img(src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAICAMAAAD+zz7+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAP1BMVEUPFRURExMREREQExMTExMQFBQRExMRExMRExMSExMRExMQExMTExMQFBQQFBQPFRUSEhIREREODg4NDQ0AAADHzy/3AAAAFHRSTlMAAAAAAAB4dYP5gE1OTEsw+CwSE+ZAt9cAAAABYktHRBSS38k1AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QgcEhcdQlReMAAAAENJREFUCNdFx1kOgEAIBNF2AAWXcbv/XYU2xvqpPGCoxolrID1i/umxrDSZEqWLHpuI0kmPbsVyw350e5k+gcs+6t0ebqMCPHlHr3UAAAAASUVORK5CYII=").delete-count
+                        span 1250
+                        img(src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAICAMAAAD+zz7+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAP1BMVEUPFRURExMREREQExMTExMQFBQRExMRExMRExMSExMRExMQExMTExMQFBQQFBQPFRUSEhIREREODg4NDQ0AAADHzy/3AAAAFHRSTlMAAAAAAAB4dYP5gE1OTEsw+CwSE+ZAt9cAAAABYktHRBSS38k1AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QgcEhcdQlReMAAAAENJREFUCNdFx1kOgEAIBNF2AAWXcbv/XYU2xvqpPGCoxolrID1i/umxrDSZEqWLHpuI0kmPbsVyw350e5k+gcs+6t0ebqMCPHlHr3UAAAAASUVORK5CYII=").add-count
+
+                td 1 970 руб.
+                td
+                    img(src="./img/svg/close.svg").bask__close
+            tr.sale-penultimate
+                td.sale-ser(colspan="4")
+                    span.bask-delivery Доставка
+                    span.bask-delivery__rf Почтой России или курьером в зависимости от Вашего гор copy
+
+                td.sale-ser avito_sale
+
+                td.sale-ser 500 ыруб.
+                td.sale-ser 3000 тенге
+                td.sale-ser
+            tr.sale-tabe
+                td.sale-ser(colspan="4")
+                    span.bask-sale скидка
+                    span.bask-delivery__rf при оплате онлайн
+                td.sale-ser.sale-ser__yellow avito_sale
+                td.sale-ser 500 ыруб.
+                td.sale-ser.sale-ser__yellow  3000 тенге
+                td.sale-ser
+            tr
+                td.last-table(colspan="6")
+                    .container-form
+                        .bask-profi__hover
+                            input(type="text" placeholder="Введите промокод").bask-promo__imput
+                            .bask-profi__info Если Вы используете тариф “ПРОФИ”, то после создания корзины для Вас доступен функционал промокодов
+                        a(href="javascript:void(0);").btn-promo Применить
+
+                td(colspan="2").sale-ser__count
+                    | Итого:
+                    span    1 820 руб.

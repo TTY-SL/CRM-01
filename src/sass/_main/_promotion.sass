@@ -1,0 +1,137 @@
+@import "../vars"
+@import "../_mixins/option"
+.main-container
+  padding: 45px 35px
+  border: 1px solid $bord-item
+  border-top: 0
+.main-container__final
+  padding: 45px 35px 0
+  border: 1px solid $bord-item
+  border-top: 0
+.list
+  font-family: CalibriBold, sans-serif
+  font-size: rem(18)
+  margin-bottom: 45px
+.list-prev
+  table
+    width: 100%
+    margin: 45px 0 20px
+    border-collapse: collapse
+    th
+      padding: 15px 0 15px 15px
+      text-align: left
+      border-bottom: 1px solid $bg-item
+      border-right: 1px solid $bg-item
+      &:last-child
+        border-right: 0
+    td
+      padding: 15px 0 15px 15px
+      border-right: 1px solid $bg-item
+      &:last-child
+        border-right: 0
+        position: relative
+      &:first-child
+        font-family: CalibriBold, sans-serif
+    tr
+      &:nth-child(2n)
+       background: $tr-color
+.element
+  position: absolute
+  +size(30)
+  border: 1px solid $bg-item
+  cursor: pointer
+  right: 35px
+
+.element__close
+  top: 50%
+  right: 0
+  transform: translateY(-50%)
+  background: url("../img/svg/close.svg") no-repeat center
+  background-size: 20px
+.btn
+  font-family: CalibriBold, sans-serif
+  text-transform: uppercase
+  color: $color-green
+  border: 1px solid $color-green
+  &:focus
+    outline: none
+.btn-add__foto
+  position: relative
+  padding: 10px 30px 10px 50px
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 14px
+    +size(20)
+    background:  url("../img/svg/rounded-add-button.svg") no-repeat center
+    background-size: cover
+.btn-black
+  font-family: CalibriBold, sans-serif
+  text-transform: uppercase
+  border: 1px solid $color-green
+  &:focus
+    outline: none
+.code-promo
+  text-align: right
+.algoritm, .illustrate
+  margin: 50px 0 25px
+  font-size: rem(18)
+  font-family: CalibriBold, sans-serif
+.algoritm-item
+  width: 100%
+.algoritm-container, .illustrate-container
+  display: flex
+  justify-content: space-between
+.algoritm__first, .algoritm__second
+  width: 100%
+  padding: 10px 0
+  span
+    padding-left: 5px
+.algoritm__first,.algoritm__first__check
+  border-bottom: 1px solid $bg-item
+  span
+    font-weight: 600
+.algoritm__first__check,.algoritm__second__check
+  position: relative
+  padding: 10px 0
+.algoritm__second__bold
+    font-weight: 600
+input[type=checkbox].check-elemt
+  position: absolute
+  left: -9999999
+  visibility: hidden
+label.label-elemt
+  cursor: pointer
+  text-indent: -9999px
+  width: 40px
+  height: 21px
+  background: $ckeck-color
+  display: block
+  border-radius: 20px
+  position: relative
+  border: 1px solid transparent
+label.label-elemt:after
+  content: ''
+  position: absolute
+  top: 0
+  left: 1px
+  width: 19px
+  height: 19px
+  background: #fff
+  border-radius: 100%
+  transition: 0.3s
+input:checked.check-elemt + label.label-elemt
+  background: #fff
+  border: 1px solid $color-green
+input:checked.check-elemt + label.label-elemt:after
+  left: calc(100% - 0px)
+  transform: translateX(-100%)
+  border: 1px solid $color-green
+label.label-elemt:active:after
+  width: 20px
+
+
+
+

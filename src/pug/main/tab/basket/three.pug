@@ -1,0 +1,113 @@
+.container-window
+
+    .container-item
+        .item-window 3
+            .left-line
+        .item-contend
+            .help-element
+                h2 Укажите товар для сопутствующих продаж
+                span ?
+            p Здесь могут быть товары Up-sell со скидкой либо специальные предложения для комплектов. Выберите только те товары, которые Вы хотите видеть в качестве сопутствующих товаров для этого лендинга. Обратите внимание, Вы можете задавать очередность выдачи товара, перетаскивая их мышкой.
+            .nav-bar
+                .nav-burger
+                    span.nav-burger__elemet
+                    .nav-burger__container
+                        .nav-burger__menu
+                            ul
+                                li
+                                    a(href="javascript:void(0);") Портмоне
+                                li
+                                    a(href="javascript:void(0);") Часы
+                                li
+                                    a(href="javascript:void(0);") Детские игрушки
+                .nav-prev
+                    a(href="javascript:void(0);").btn.btn-prev показать товары topzakazz
+                    input(type="text" placeholder="Введите наименование товара").nav-prev__val
+                    .nav-prev__search
+                        img(src="./img/svg/magnifying.svg")
+            .item-products
+                .slider-products
+                    .slider-product
+                        .product__contend
+                            input(type="checkbox" class="prod" id="product")
+                            label(for="product" class="checkbox-custom")
+                            img(src="./img/portm.png")
+                            .detail Подробнее
+                        spna.product__name Портмоне Wild  Alligator
+                    .slider-product
+                        .product__contend.empty__product
+                            input(type="checkbox" class="prod" id="product1")
+                            label(for="product1" class="checkbox-custom ")
+                            .product__question ?
+                            .product__text Товар не создан
+                            .detail Подробнее
+                    .slider-product
+                        .product__contend.empty__product
+                            input(type="checkbox" class="prod" id="product2")
+                            label(for="product2" class="checkbox-custom ")
+                            .product__question ?
+                            .product__text Товар не создан
+                            .detail Подробнее
+                    .slider-product
+                        .product__add
+
+                            .product__info Вы можете  создать больше  товаров на  тарифном плане
+                            .product__profi Профи
+                            a(href="javascript:void(0);").btn-add перейти
+
+                    .slider-product
+                        .product__add
+
+                            .product__info Вы можете  создать больше  товаров на  тарифном плане
+                            .product__profi Профи
+                            a(href="javascript:void(0);").btn-add перейти
+                    .slider-product
+                        .product__add
+
+                            .product__info Вы можете  создать больше  товаров на  тарифном плане
+                            .product__profi Профи
+                            a(href="javascript:void(0);").btn-add перейти
+            .code-promo
+                a(href="javascript:void(0);").btn-black.btn-code добавить товар
+            .illustrate Выберите метод отображения товара
+            .illustrate-container
+                .illustrate-container__contend
+                    span 1.
+                    |На странице отображен только 1 товар
+                .illustrate-container__check
+                    input(type="checkbox" id="ckeck3" class="check-elemt" checked)
+                    label(for="ckeck3" class="label-elemt") Toggle
+            .illustrate-container
+                .illustrate-container__contend
+                    span 2.
+                    |На странице отображено сразу 4 товара
+                .illustrate-container__check
+                    input(type="checkbox" id="ckeck4" class="check-elemt")
+                    label(for="ckeck4" class="label-elemt") Toggle
+
+
+            include three/three-one-product
+
+
+
+            .illustrate Выберите метод отображения товара
+            .illustrate-container
+                .illustrate-container__contend
+                    span 1.
+                    | На странице отображен только 1 товар
+                .illustrate-container__check
+                    input(type="checkbox" id="ckeck5" class="check-elemt")
+                    label(for="ckeck5" class="label-elemt") Toggle
+            .illustrate-container
+                .illustrate-container__contend
+                    span 2.
+                    | На странице отображено сразу 4 товара
+                .illustrate-container__check
+                    input(type="checkbox" id="ckeck6" class="check-elemt" checked)
+                    label(for="ckeck6" class="label-elemt") Toggle
+            include three/three-four-product
+            include three/three-big-product
+        .step-back Вернуться к шагу №2
+    .footer-window
+        .question Все готово?
+        a(href="javascript:void(0);").btn.btn-next__stage Следующий этап

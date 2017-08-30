@@ -1,0 +1,103 @@
+@import "../../vars"
+@import "../../_mixins/option"
+.question__last
+  position: relative
+  font-size: rem(22)
+  &:after
+    content: ''
+    position: absolute
+    width: 720px
+    left: 120px
+    top: 50%
+    transform: translateY(-50%)
+    border: 1px dashed  $bord-item
+.list__action-one__element
+  display: flex
+.element__check
+  margin-right: 5px
+.content-info, .content-policy
+  display: flex
+  align-items: center
+  background-color: $tr-color
+  padding: 15px
+
+.content-info__logo
+  width: 20%
+  height: 140px
+  text-align: center
+  margin-right: 10px
+  padding: 45px 15px
+  background-color: $color-white
+  border: 1px solid $bg-item
+  font-family: CalibriLight, sans-serif
+  position: relative
+  span
+    display: block
+    text-transform: uppercase
+.content-info__address
+  width: 40%
+  height: 140px
+  margin-right: 10px
+  padding: 10px 15px 15px 15px
+  background-color: $color-white
+  border: 1px solid $bg-item
+  font-family: CalibriLight, sans-serif
+  position: relative
+.content-info__company
+  width: 30%
+  height: 140px
+  padding: 15px
+  background-color: $color-white
+  border: 1px solid $bg-item
+  font-family: CalibriLight, sans-serif
+  position: relative
+  font-size: rem(16)
+
+.pen-element__sixth__add
+  top: 4px
+  right: 4px
+  position: absolute
+  +size(30)
+  border: 1px solid $color-green
+  cursor: pointer
+  background-color: $color-white
+  img
+    +absolute-center
+    width: 20px
+.content-info__private
+  padding-bottom: 2px
+  border-bottom: 2px solid $bg-item
+.info-header
+  display: flex
+  align-items: center
+  margin-bottom: 15px
+.info-header__phone, .info-header__mail
+  margin-right: 10px
+  img
+    width: 18px
+  span
+    margin-left: 5px
+.content-policy
+  margin: 10px 0 40px
+  padding: 20px
+.policy-agreement
+  width: 100%
+  border: 1px solid $bg-item
+  position: relative
+  padding: 40px
+  background-color: $color-white
+.policy-agreement__title
+  font-family: CalibriBold,sans-serif
+  font-size: rem(22)
+  margin-bottom: 20px
+.policy-agreement__text
+  display: block
+  font-size: rem(18)
+  margin-bottom: 20px
+
+
+
+
+.footer-title
+  font-family: CalibriBold,sans-serif
+  font-size: rem(22)

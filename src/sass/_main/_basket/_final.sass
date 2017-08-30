@@ -1,0 +1,83 @@
+@import "../../vars"
+@import "../../_mixins/option"
+.final
+  padding: 45px 35px 0
+.final-container
+  display: flex
+  justify-content: space-between
+.final-header
+  text-align: right
+  width: 100%
+  height: 70px
+  line-height: 70px
+  background-color: $bg-item
+.final-header__title
+  margin-right: 10px
+  font-size: rem(35)
+  font-family: CalibriBold, sans-serif
+  color: $second-logo
+  img
+    width: 30px
+    margin-right: 10px
+    margin-top: -7px
+.item-contend__cork
+  width: 7%
+.btn-final
+  color: $color-white
+  background-color: $color-green
+  font-size: rem(25)
+.step-back__final
+  position: absolute
+  top: -30px
+  right: 0
+  text-align: center
+  line-height: 35px
+  +size(220,40)
+  color: $main-work
+  border: 1px solid $main-work
+  border-left: 0
+  font-family: CalibriLight,sans-serif
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    height: 27px
+    top: -4px
+    left: -10px
+    width: 1px
+    background-color: $main-work
+    transform: rotate(45deg)
+  &:after
+    content: ''
+    position: absolute
+    height: 27px
+    bottom: -4px
+    left: -10px
+    width: 1px
+    background-color: $main-work
+    transform: rotate(-45deg)
+.footer-info__logo, .footer-info__address, .footer-info__company
+
+  font-family: CalibriLight, sans-serif
+  font-size: rem(16)
+.footer-info__logo
+  width: 113px
+  height: 113px
+  margin-left: 20px
+  img
+    width: 100%
+.setting-characteristic__select
+  border: 1px solid $bord-item
+  padding: 5px
+  width: 100%
+
+
+.footer-info__address
+  width: 35%
+  padding: 10px 15px 15px 15px
+.footer-info__company
+  width: 30%
+  padding: 0 15px 15px 15px
+.content-info
+  padding: 20px
+  margin-top: 30px

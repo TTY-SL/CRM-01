@@ -1,0 +1,147 @@
+@import "../vars"
+@import "../_mixins/option"
+.pop-title, .pop-val, .pop-lg
+  font-family: CalibriBold, sans-serif
+  margin-bottom: 15px
+.pop-val, .pop-lg
+  margin-top: 15px
+.pop-promo, .pop-container__mony, .pop-container__count, .pop-lg__select, .pop-lg__select__larg, .setting-color
+  border: 1px solid $bord-item
+  padding: 10px
+.setting-color
+  width: 100%
+.pop-container__count
+  width: 50%
+.larg
+  margin-bottom: 5px
+.pop-container__count
+ margin-right: 20px
+.pop-container__mony
+  width: 25%
+.pop-promo,.pop-lg__select
+  width: 100%
+.pop-lg__select__larg
+  width: 82%
+  margin: 5px 0
+.btn-save, .btn-save__show
+  padding: 10px 0
+  font-size: rem(20)
+  background-color: #fff
+  cursor: pointer
+.btn-save__show
+  display: block
+  width: 70%
+  margin: 0 auto
+.btn-save
+  margin-top: 15px
+  width: 100%
+.pop-container
+  display: flex
+
+  align-items: center
+  flex-shrink: 0
+.pop-container__larg
+  display: flex
+  align-items: center
+
+.pop-container__add
+  +size(36)
+  margin-left: 20px
+  border: 1px solid $color-green
+  text-align: center
+  position: relative
+  img
+    +absolute-center
+    +size(25)
+.pop-lg__select, .pop-container__mony, .pop-lg__select__larg,.setting-characteristic__select, .setting-color, .card-setting__category, .offer-setting__select, .list__currency, .ordering-form__select
+  background: #fff url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAICAQAAABjGAZHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwSEwql6x7zAAAAVklEQVQI123OKxKAMBRD0aNZAxKBAVs2252hOrhiaqoxDN/GJTfzXujMWpp1REX4oaCI9JLd9EKTXdLDYJONFxplm6Flv9XHodaTc8Jqbc7DoqqWOzgAWnEbJwS+oRsAAAAASUVORK5CYII=") no-repeat
+  background-size: 14px
+  background-position:  right 5px  center
+  -webkit-appearance: none
+  -moz-appearance: none
+  color: #333
+#basket-popup
+  background: $color-white
+  padding: 40px
+  border: 1px solid $bord-item
+  max-width: 600px
+  margin: 40px auto
+  position: relative
+  font-size: rem(18)
+  &:before
+    content: '!'
+    position: absolute
+    +size(30)
+    border-radius: 50%
+    border: 1px solid $color-green
+    background-color: #fff
+    font-size: rem(18)
+    text-align: center
+    line-height: 30px
+    top: 20px
+    left: -15px
+.basket-popup__option, .basket-popup__default
+  display: block
+.basket-popup__option
+  margin-top: 15px
+.basket-option
+  font-family: CalibriBold, sans-serif
+  display: flex
+  align-items: center
+  margin: 30px 0 15px
+.basket-option__input
+  width: 10%
+  padding: 5px
+  margin: 0 10px 0 5px
+  font-family: CalibriBold, sans-serif
+
+
+
+#small-dialog
+  background: $bg-item
+  padding: 40px 20px
+  border: 1px solid $bord-item
+  max-width: 350px
+  margin: 40px auto
+  position: relative
+  font-size: rem(18)
+.my-mfp-zoom-in .zoom-anim-dialog
+  opacity: 0
+  transition: all 0.2s ease-in-out
+  transform: scale(0.8)
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog
+  opacity: 1
+  transform: scale(1)
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog
+  transform: scale(0.8)
+  opacity: 0
+.my-mfp-zoom-in.mfp-bg
+  opacity: 0
+  transition: opacity 0.3s ease-out
+
+.my-mfp-zoom-in.mfp-ready.mfp-bg
+  opacity: 0
+
+.my-mfp-zoom-in.mfp-removing.mfp-bg
+  opacity: 0
+.my-mfp-slide-bottom .zoom-anim-dialog
+  opacity: 0
+  transition: all 0.2s ease-out
+  transform: translateY(-20px) perspective( 600px ) rotateX( 10deg )
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog
+  opacity: 1
+  transform: translateY(0) perspective( 600px ) rotateX( 0 )
+
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog
+  opacity: 0
+  transform: translateY(-10px) perspective( 600px ) rotateX( 10deg )
+
+.my-mfp-slide-bottom.mfp-bg
+  opacity: 0
+  transition: opacity 0.3s ease-out
+
+.my-mfp-slide-bottom.mfp-ready.mfp-bg
+  opacity: 0.8
+
+.my-mfp-slide-bottom.mfp-removing.mfp-bg
+  opacity: 0

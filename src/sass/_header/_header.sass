@@ -1,0 +1,132 @@
+@import "../vars"
+@import "../_mixins/option"
+.header
+  background-color: $color-black
+.header-top
+  font-family: CalibriBold, sans-serif
+  padding: 14px 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+.logo
+  width: 176
+  img
+    width: 100%
+.top-info
+  li
+    display: inline-block
+.top-info__balance,.top-info__license
+  color: $color-logo
+  padding: 5px 20px
+  border: 1px $border-color solid
+  text-transform: uppercase
+.top-info__replenish
+  color: $color-green
+  padding: 5px 20px
+  text-transform: uppercase
+  border: 1px $color-green solid
+.top-info__license
+  margin: 0 10px
+.top-info__account
+  padding: 5px 20px 5px 40px
+  text-transform: uppercase
+  color: $color-logo
+  background-color: $color-btn-account
+  position: relative
+  &:before
+    content: ''
+    +size(20,20)
+    position: absolute
+    top: 4px
+    left: 15px
+    background: url("../img/svg/men.svg") no-repeat center
+    background-size: cover
+.header-nav
+  background-color: $bg-top
+.g-nav
+  padding: 30px 0
+.nav-menu
+  li
+    display: inline-block
+.nav-item
+  font-family: CalibriBold, sans-serif
+  margin-left: 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  span
+    text-transform: uppercase
+    color: $text-color
+  &:hover
+    .nav-item__element
+      border: 1px $color-green solid
+.nav-item__element
+  +size(93)
+  position: relative
+  background-color: #fff
+  border-radius: 50%
+  margin-bottom: 15px
+  transition: all .5s ease
+  border: 1px transparent solid
+  img
+    +absolute-center
+    width: 52px
+.crm-nav-burger
+  display: none
+.bar-burger
+  +size(30,20)
+  margin-left: 20px
+  position: relative
+.bar-burger__element
+  position: absolute
+  width: 25px
+  border: 1px solid $second-logo
+  cursor: pointer
+  +absolute-center
+  &:before
+    content: ''
+    position: absolute
+    width: 25px
+    border: 1px solid $second-logo
+    left: -1px
+    top: -6px
+  &:after
+    content: ''
+    position: absolute
+    width: 25px
+    border: 1px solid $second-logo
+    left: -1px
+    top: 4px
+
+.nav-container
+  position: fixed
+  top: 0
+  left: -9999px
+  width: 100vw
+  height: 100vh
+  z-index: 20
+  text-align: center
+  background-color: rgba($second-logo, .9)
+  padding: 20px
+.nav-container__menu
+  li
+    margin-bottom: 7px
+    &:last-child
+      margin-bottom: 0
+    a
+      color: $color-logo
+      padding: 3px 20px
+      text-transform: uppercase
+      transition: all .5s ease
+      &:hover
+        color: $second-logo
+        background-color: $color-logo
+.nav-container__active
+  left: 0
+  transition: all .5s ease
+.nav-container__close
+  position: absolute
+  top: 10px
+  right: 10px
+.active
+  border: 1px $color-green solid

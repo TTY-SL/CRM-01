@@ -1,0 +1,75 @@
+.container-window
+
+    .container-item
+        .item-window 4
+            .left-line
+        .item-contend
+            .help-element
+                h2 Задайте страны, для которых клиенты могут оплачивать свои заказы при получении
+                    br
+                    |(наложенный платеж)
+            p Так же Вы можете создать список исключений для конкретной страны, указав регионы и города
+                |для которых не будет доступна
+                |услуга “наложенного платежа”
+            .list-state
+                span.list-sate__title Создайте список стран, для которых возможна
+                    |оплата заказа при получении (наложенный платеж)
+                .list-container
+                    input(type="text" placeholder="Введите название страны").list-container__input
+                    .btn-container
+                        a(href="javascript:void(0);").btn-black.btn-footer__setting создать
+                .list-container__silber
+                    .list__state
+                        span Россия
+                    .list__action
+                        select.list__currency
+                            option Рубли
+                        .element__min
+                            img(src="./img/svg/round-delete-button.svg")
+                        .element__plus
+                            img(src="./img/svg/rounded-add-button.svg")
+                        .element__done
+                            img(src="./img/svg/close-black.svg")
+                span Список исключения:
+                .list-container__silber
+                    .list__state
+                        span \Чеченская республика
+                    .list__action-one__element
+                        .element__done
+                            img(src="./img/svg/close-black.svg")
+                .list-container.list-container__border
+                    .list__state
+                        span Россия\Краснодар
+                    .list__action
+                        .btn-container
+                            a(href="javascript:void(0);").btn-black.btn-fourth__setting создать
+                        .element__done
+                            img(src="./img/svg/close-black.svg")
+                .list-container__silber.list-container__border-red
+                    .list__state
+                        span Казахстан
+                    .list__action
+                        select.list__currency
+                            option Тенге
+                        .element__min
+                            img(src="./img/svg/round-delete-button.svg")
+                        .element__plus
+                            img(src="./img/svg/rounded-add-button.svg")
+                        .element__done
+                            img(src="./img/svg/close-black.svg")
+                .list-container__silber
+                    .list__state
+                        span Украина
+                    .list__action
+                        select.list__currency
+                            option Гривна
+                        .element__min
+                            img(src="./img/svg/round-delete-button.svg")
+                        .element__plus
+                            img(src="./img/svg/rounded-add-button.svg")
+                        .element__done
+                            img(src="./img/svg/close-black.svg")
+        .step-back Вернуться к шагу №3
+    .footer-window
+        .question Все готово?
+        a(href="javascript:void(0);").btn.btn-next__stage Следующий этап

@@ -1,0 +1,205 @@
+.card-product
+    .card-header
+        .card-header__name карточка товара
+        .card-header__close
+            img(src="./img/svg/close.svg").bask__close
+    .card-settings
+        .card-setting__45
+            .card-setting__name Наименование
+            .card-setting__product
+                .card-setting__artic
+                    span Артикул
+                    input(type="text").card-setting__input
+                .card-setting__name-product
+                    span Наименование товара
+                    input(type="text" ).card-setting__input
+            .card-setting__name Категория товара
+            .card-setting__product
+                select.card-setting__category
+                    option Введите название или выберите из списка
+            .card-setting__help
+                span Способ продажи
+                span.help ?
+            .card-setting__product
+                .card-setting__check
+                    span Основной товар
+                    input(type="checkbox" class="prod" id="product7")
+                    label(for="product7" class="checkbox-custom__product")
+                .card-setting__check
+                    span Товар в подарок
+                    input(type="checkbox" class="prod" id="product8")
+                    label(for="product8" class="checkbox-custom__product")
+            .card-setting__accompanying
+                .card-setting__accompanying__check
+                    span Сопутствующий товар
+                    input(type="checkbox" class="prod" id="product9")
+                    label(for="product9" class="checkbox-custom__product")
+                .card-setting__price
+                    .card-setting__price__old
+                        span Старая цена
+                        input(type="text").card-setting__input
+                    .card-setting__price__new
+                        span Новая цена
+                        input(type="text").card-setting__input
+                .card-setting__description
+                    span Описание товара
+                    textarea(placeholder="Создайте небольшое описание к товару").card-setting__description__val
+                .card-setting__description
+                    span Характеристики
+                    textarea(placeholder="Введите по одной характеристике в строку").card-setting__description__val
+            .card-setting__name Характеристики
+                .card-setting__mas
+                    span Вес
+                    .setting-mas__container
+                        .product__contend-close-big
+                            img(src="./img/svg/close-black.svg")
+                        input(type="text" value="0.3").setting-mas__input
+                        | кг.
+            .card-setting__characteristic
+                .product__contend-close-big
+                    img(src="./img/svg/close-black.svg")
+                .setting-characteristic__container
+                    .setting-characteristic__first
+                        .setting-characteristic__color Цвет
+                            .element-table.element-table__pen
+
+                    .setting-characteristic__second
+                        .setting-characteristic__new
+                            .element-color.element-color__black
+                            span черный
+                            .product__contend-close-big
+                                img(src="./img/svg/close-black.svg")
+                        .setting-characteristic__new
+                            .element-color.element-color__red
+                            span красный
+                            .product__contend-close-big
+                                img(src="./img/svg/close-black.svg")
+                    .setting-characteristic__three
+                        .setting-characteristic__empty
+                        .setting-characteristic__add
+                            img(src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEUZ2If///8Z2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcAAACRiq6LAAAAHHRSTlMAAARKlMzxBW/lMNbpk1EjEFT4Zwb9tBObAx8BmxBDuwAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwQMTNe2AS1AAAA0UlEQVQoz33T6XKEIBBG0cZ9QcVldEzu+z9nQgSdTDn9/bHkUAhNKxKSpFleQJFnaWJCApVVzZm6Kl+xacF2/eDc0HcW2ubCccLOyzHPmGW2TGPE8cG6xW/7wW3lMR7YTDx3eUWzP5kaj2XLetmBZl9py1+ssJu8o9kslZGkZj4FXDzjTJ1Iil3ucLGkktHJHZqOTHL6e+zJpWC4x4HCv4fxK38zHOgYl3U+8OUf33FZdUPqUdQiqOX7V/iwl7Pw+pWpl623id5gemvqTf3hd/gBpTMZ0mm2QaAAAAAASUVORK5CYII=")
+
+            .card-setting__name__last Создайте новую характеристику
+            .card-setting__product
+                .card-setting__name-product__footer
+                    input(type="text" placeholder="Размер, цвет и т.д.").card-setting__input
+                .card-setting__artic__footer
+                    a(href="#small-dialog").btn-black.btn-setting создать
+
+        .card-setting__35
+            .card-setting__name Стоимость
+            .card-setting__price__one
+                .card-setting__price__val
+                    span Закупочная цена
+                    input(type="text").card-setting__input
+                .card-setting__price__currency
+                    span Валюта
+                    select.card-setting__category
+                        option руб.
+                        option руб.
+                        option руб.
+            .card-setting__price__one
+                .card-setting__price__val
+                    span Розница
+                    input(type="text").card-setting__input
+                .card-setting__price__currency
+                    span Валюта
+                    select.card-setting__category
+                        option руб.
+                        option руб.
+                        option руб.
+            .card-setting__price__internal
+                .card-setting__price__val
+                    input(type="text").card-setting__input
+                .card-setting__price__currency
+                    select.card-setting__category
+                        option руб.
+                        option руб.
+                        option руб.
+                .pop-setting__add
+                    img(src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEUZ2If///8Z2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcAAACRiq6LAAAAHHRSTlMAAARKlMzxBW/lMNbpk1EjEFT4Zwb9tBObAx8BmxBDuwAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwQMTNe2AS1AAAA0UlEQVQoz33T6XKEIBBG0cZ9QcVldEzu+z9nQgSdTDn9/bHkUAhNKxKSpFleQJFnaWJCApVVzZm6Kl+xacF2/eDc0HcW2ubCccLOyzHPmGW2TGPE8cG6xW/7wW3lMR7YTDx3eUWzP5kaj2XLetmBZl9py1+ssJu8o9kslZGkZj4FXDzjTJ1Iil3ucLGkktHJHZqOTHL6e+zJpWC4x4HCv4fxK38zHOgYl3U+8OUf33FZdUPqUdQiqOX7V/iwl7Pw+pWpl623id5gemvqTf3hd/gBpTMZ0mm2QaAAAAAASUVORK5CYII=")
+
+            .card-setting__price
+                .card-setting__price__val
+                    span Дропшиппинг
+                    input(type="text").card-setting__input
+                .card-setting__price__currency
+                    span Валюта
+                    select.card-setting__category
+                        option руб.
+                        option руб.
+                        option руб.
+                .pop-setting__add
+                    img(src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEUZ2If///8Z2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcAAACRiq6LAAAAHHRSTlMAAARKlMzxBW/lMNbpk1EjEFT4Zwb9tBObAx8BmxBDuwAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwQMTNe2AS1AAAA0UlEQVQoz33T6XKEIBBG0cZ9QcVldEzu+z9nQgSdTDn9/bHkUAhNKxKSpFleQJFnaWJCApVVzZm6Kl+xacF2/eDc0HcW2ubCccLOyzHPmGW2TGPE8cG6xW/7wW3lMR7YTDx3eUWzP5kaj2XLetmBZl9py1+ssJu8o9kslZGkZj4FXDzjTJ1Iil3ucLGkktHJHZqOTHL6e+zJpWC4x4HCv4fxK38zHOgYl3U+8OUf33FZdUPqUdQiqOX7V/iwl7Pw+pWpl623id5gemvqTf3hd/gBpTMZ0mm2QaAAAAAASUVORK5CYII=")
+
+            .card-setting__price
+                .card-setting__price__val
+                    span Опт от 15 шт.
+                    input(type="text").card-setting__input
+                .card-setting__price__currency
+                    span Валюта
+                    select.card-setting__category
+                        option руб.
+                        option руб.
+                        option руб.
+                .pop-setting__add
+                    img(src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEUZ2If///8Z2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcAAACRiq6LAAAAHHRSTlMAAARKlMzxBW/lMNbpk1EjEFT4Zwb9tBObAx8BmxBDuwAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwQMTNe2AS1AAAA0UlEQVQoz33T6XKEIBBG0cZ9QcVldEzu+z9nQgSdTDn9/bHkUAhNKxKSpFleQJFnaWJCApVVzZm6Kl+xacF2/eDc0HcW2ubCccLOyzHPmGW2TGPE8cG6xW/7wW3lMR7YTDx3eUWzP5kaj2XLetmBZl9py1+ssJu8o9kslZGkZj4FXDzjTJ1Iil3ucLGkktHJHZqOTHL6e+zJpWC4x4HCv4fxK38zHOgYl3U+8OUf33FZdUPqUdQiqOX7V/iwl7Pw+pWpl623id5gemvqTf3hd/gBpTMZ0mm2QaAAAAAASUVORK5CYII=")
+
+            .card-setting__price
+                .card-setting__price__val
+                    span Опт от 50 шт.
+                    input(type="text").card-setting__input
+                .card-setting__price__currency
+                    span Валюта
+                    select.card-setting__category
+                        option руб.
+                        option руб.
+                        option руб.
+                .pop-setting__add
+                    img(src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEUZ2If///8Z2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcAAACRiq6LAAAAHHRSTlMAAARKlMzxBW/lMNbpk1EjEFT4Zwb9tBObAx8BmxBDuwAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwQMTNe2AS1AAAA0UlEQVQoz33T6XKEIBBG0cZ9QcVldEzu+z9nQgSdTDn9/bHkUAhNKxKSpFleQJFnaWJCApVVzZm6Kl+xacF2/eDc0HcW2ubCccLOyzHPmGW2TGPE8cG6xW/7wW3lMR7YTDx3eUWzP5kaj2XLetmBZl9py1+ssJu8o9kslZGkZj4FXDzjTJ1Iil3ucLGkktHJHZqOTHL6e+zJpWC4x4HCv4fxK38zHOgYl3U+8OUf33FZdUPqUdQiqOX7V/iwl7Pw+pWpl623id5gemvqTf3hd/gBpTMZ0mm2QaAAAAAASUVORK5CYII=")
+
+            .card-setting__price
+                .card-setting__price__val
+                    span Опт от 100 шт.
+                    input(type="text").card-setting__input
+                .card-setting__price__currency
+                    span Валюта
+                    select.card-setting__category
+                        option руб.
+                        option руб.
+                        option руб.
+                .pop-setting__add
+                    img(src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEUZ2If///8Z2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcAAACRiq6LAAAAHHRSTlMAAARKlMzxBW/lMNbpk1EjEFT4Zwb9tBObAx8BmxBDuwAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwQMTNe2AS1AAAA0UlEQVQoz33T6XKEIBBG0cZ9QcVldEzu+z9nQgSdTDn9/bHkUAhNKxKSpFleQJFnaWJCApVVzZm6Kl+xacF2/eDc0HcW2ubCccLOyzHPmGW2TGPE8cG6xW/7wW3lMR7YTDx3eUWzP5kaj2XLetmBZl9py1+ssJu8o9kslZGkZj4FXDzjTJ1Iil3ucLGkktHJHZqOTHL6e+zJpWC4x4HCv4fxK38zHOgYl3U+8OUf33FZdUPqUdQiqOX7V/iwl7Pw+pWpl623id5gemvqTf3hd/gBpTMZ0mm2QaAAAAAASUVORK5CYII=")
+
+            .card-setting__price
+                .card-setting__price__val
+                    span Опт от 500 шт.
+                    input(type="text").card-setting__input
+                .card-setting__price__currency
+                    span Валюта
+                    select.card-setting__category
+                        option руб.
+                        option руб.
+                        option руб.
+                .pop-setting__add
+                                img(src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEUZ2If///8Z2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcAAACRiq6LAAAAHHRSTlMAAARKlMzxBW/lMNbpk1EjEFT4Zwb9tBObAx8BmxBDuwAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwQMTNe2AS1AAAA0UlEQVQoz33T6XKEIBBG0cZ9QcVldEzu+z9nQgSdTDn9/bHkUAhNKxKSpFleQJFnaWJCApVVzZm6Kl+xacF2/eDc0HcW2ubCccLOyzHPmGW2TGPE8cG6xW/7wW3lMR7YTDx3eUWzP5kaj2XLetmBZl9py1+ssJu8o9kslZGkZj4FXDzjTJ1Iil3ucLGkktHJHZqOTHL6e+zJpWC4x4HCv4fxK38zHOgYl3U+8OUf33FZdUPqUdQiqOX7V/iwl7Pw+pWpl623id5gemvqTf3hd/gBpTMZ0mm2QaAAAAAASUVORK5CYII=")
+
+            .card-setting__price
+                .card-setting__price__val
+                    span Опт от 1000 шт.
+                    input(type="text").card-setting__input
+                .card-setting__price__currency
+                    span Валюта
+                    select.card-setting__category
+                        option руб.
+                        option руб.
+                        option руб.
+                .pop-setting__add
+                    img(src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEUZ2If///8Z2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcZ2IcAAACRiq6LAAAAHHRSTlMAAARKlMzxBW/lMNbpk1EjEFT4Zwb9tBObAx8BmxBDuwAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwQMTNe2AS1AAAA0UlEQVQoz33T6XKEIBBG0cZ9QcVldEzu+z9nQgSdTDn9/bHkUAhNKxKSpFleQJFnaWJCApVVzZm6Kl+xacF2/eDc0HcW2ubCccLOyzHPmGW2TGPE8cG6xW/7wW3lMR7YTDx3eUWzP5kaj2XLetmBZl9py1+ssJu8o9kslZGkZj4FXDzjTJ1Iil3ucLGkktHJHZqOTHL6e+zJpWC4x4HCv4fxK38zHOgYl3U+8OUf33FZdUPqUdQiqOX7V/iwl7Pw+pWpl623id5gemvqTf3hd/gBpTMZ0mm2QaAAAAAASUVORK5CYII=")
+
+        .card-setting__20
+            .card-setting__name-color Цвет
+            include color-card
+    .card-footer
+        a(href="javascript:void(0);").btn-black.btn-footer__setting Отмена
+        a(href="javascript:void(0);").btn-black.btn-footer__setting создать товар

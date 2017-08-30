@@ -1,0 +1,102 @@
+@import "../../vars"
+@import "../../_mixins/option"
+.container-item
+  display: flex
+  position: relative
+.item-window__empty
+  +size(52)
+.item-window
+  +size(50)
+  text-align: center
+  line-height: 50px
+  border-radius: 100%
+  margin-right: 20px
+  border: 1px solid $color-green
+  position: relative
+  font-family: CalibriBold, sans-serif
+  font-size: rem(25)
+.left-line
+  position: absolute
+  left: 50%
+  top: calc( 100% + 10px)
+  width: 1px
+  transform: translateX(-50%)
+  background-color:  $bord-item
+.item-contend
+  display: flex
+  flex-direction: column
+  width: 93%
+  h2
+    font-family: CalibriBold, sans-serif
+    font-size: rem(22)
+  p
+    font-size: rem(18)
+.help-element
+  display: flex
+  align-items: center
+  margin-bottom: 20px
+  span
+    +size(25)
+    margin-left: 20px
+    margin-top: 5px
+    text-align: center
+    border-radius: 50%
+    font-family: CalibriBold, sans-serif
+    border: 1px solid $color-green
+    line-height: 25px
+    font-size: rem(20)
+.footer-window
+  width: 93%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-top: 50px
+.question
+  position: relative
+  font-size: rem(22)
+  &:after
+    content: ''
+    position: absolute
+    width: 650px
+    left: 120px
+    top: 50%
+    transform: translateY(-50%)
+    border-bottom: 1px dashed  $bord-item
+.btn-next__stage
+  position: relative
+  padding: 10px 40px
+  font-size: rem(20)
+  &:after
+    content: ''
+    position: absolute
+    +size(15,25)
+    left: -25px
+    top: 50%
+    transform: translateY(-50%)
+    background: url("../img/svg/arrow-right.svg") no-repeat center
+.item-contend__url
+  margin-top: 25px
+  width: 100%
+  background-color: $color-logo
+  padding: 2px 10px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  li
+    display: inline
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+    img
+      +size(20)
+.item-contend__url__input
+  font-size: rem(18)
+  width: 91%
+  padding: 5px 10px
+  border-radius: 5px
+  border: 0
+.item-contend__lg
+  width: 100%
+  border: 1px solid $color-logo
+  img
+    width: 100%

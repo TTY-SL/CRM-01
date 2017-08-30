@@ -1,0 +1,168 @@
+@import "../../vars"
+@import "../../_mixins/option"
+.bask
+  width: 100%
+  margin-top: 40px
+  position: relative
+.bask__name
+  font-size: rem(30)
+  font-family: CalibriBold, sans-serif
+  text-transform: uppercase
+  color: $second-logo
+.bask-container
+  margin: 30px 0 50px
+  table
+    width: 100%
+    border-collapse: collapse
+    th
+      padding: 15px 0 15px 15px
+      text-align: left
+      border-bottom: 1px solid $bg-item
+      border-right: 1px solid $bg-item
+      text-align: center
+      font-family: Calibri, sans-serif
+      font-weight: 400
+      &:last-child
+        border-right: 0
+    td
+      text-align: left
+      padding: 15px
+      border-right: 1px solid $bg-item
+      border-bottom: 1px solid $bg-item
+      font-size: rem(14)
+      position: relative
+      font-family: CalibriBold, sans-serif
+      text-align: center
+      color: $text-color-tab
+      &:last-child
+        border-right: 0
+        position: relative
+      &.container-price
+        padding-right: 30px
+      &.last-table
+        padding: 15px 15px 15px 0
+        border-bottom: 0
+
+.bask-profi__promo
+  margin-top: 20px
+  display: flex
+  align-items: center
+  position: relative
+.bask-profi__info
+  visibility: hidden
+  position: absolute
+  width: 850px
+  top: 50px
+  left: 0
+  padding: 7px 40px 7px 30px
+  border: 1px solid $bg-item
+  &:before
+    content: '!'
+    position: absolute
+    +size(20)
+    border-radius: 50%
+    border: 1px solid $color-green
+    background-color: #fff
+    font-size: rem(14)
+    text-align: center
+    line-height: 20px
+    top: 50%
+    left: -10px
+    transform: translateY(-50%)
+.bask-promo__imput
+  width: 180px
+  padding: 10px 10px
+  border: 1px solid $bord-item
+  margin-right: 10px
+  cursor: pointer
+.container-form
+  text-align: left
+  display: flex
+.bask-profi__hover
+  position: relative
+  &:hover
+    .bask-profi__info
+      visibility: visible
+.btn-promo
+  padding: 7px 40px
+  background: $btn-color-bg
+  border: 1px solid transparent
+  color: #fff
+.sale-ser__count
+  text-align: right
+  font-size: rem(18)
+  padding-right: 0
+  span
+    padding-left: 5px
+    font-family: CalibriBold, sans-serif
+    color: $second-logo
+.bask__close
+  +size(20)
+  cursor: pointer
+.bask-element__pen-center
+  top: 50%
+  right: 5px
+  background: url("../img/svg/pen.svg") no-repeat center
+  background-size: 25px
+  transform: translateY(-50%)
+.bask-element__pen
+  top: 5px
+  right: 5px
+  background: url("../img/svg/pen.svg") no-repeat center
+  background-size: 25px
+.product-element__pen
+  top: 50%
+  right: 5px
+  transform: translateY(-50%)
+  background: url("../img/svg/pen.svg") no-repeat center
+  background-size: 25px
+.bask-delivery, .bask-sale
+  display: block
+  font-family: CalibriBold, sans-serif
+  text-transform: uppercase
+  color: $color-btn-account
+  margin-left: 60px
+  padding-left: 10px
+  font-size: rem(20)
+  position: relative
+  text-align: left
+.bask-sale
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: -50px
+    +size(48,32)
+    background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgCAQAAAD+3TOXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwTGgyciGq4AAAE60lEQVRIx52We2xUVRCHvzm7xZa28moNRYuCTVhC5dFCUGM0miA10lRACcQCLYJ/GFExJApCUJQgGAREQKKhXaikaUl5FcVI0UgoKFIRFZS0gIC0UKqUdDeljzv+sbvdvXu3QJib3cydzP19Z86Ze8+RTwiZYvWn97W/eqkCcSggyXpf2umGzqZgTh+E14FsAATQ4A8MGvQizUT4i+WC+aXfIdK6Ii9Rz/GG4wziji0MmKhvuMa299Mzrq9IAGAaH5PnSuaIViB3DFCC10T5jBr88YV0uBfFwQA2yQyqaGt/TTNTH0wllX6hpwQPo/GQTh/ibg5wd3lNpCtx0G69Yn5gg77Ht+wCix73WKazOTTngGRt5Xn1S6L2AKANH/XsYw0XnACB1QFviKuGfN1hAWY3lyhkZNqpBkjWSv5mxr/0RbDSZeTFjKPv+zLyG6qo7dEzsTPRJJGkA3lRxlOo5dEAF1ylhWN4muRPKSFFjxufXNYVHJC1ya6WPGs719zTTZufhLtkoxab7ITHhqaMfIbWs7Wtj9CiF+UqlzhFGSe1ROr4vZtF3klFhTVWPOYC32meJPAAO+vr2WDW9xpf3lIOQrGONkMY+uWU0kZdYy3JupJU2nmacVaXhJmim5nqmKJsBruudC3V0/fHjxOPeY4jWtN59LfD5zoC8dzCuCXWCNflYhgmPx5Lergw+6Mh7r1FjYPJg5mAF4EJVpnMojRykYVltfNMfChQEezQK5OrJofTUjEcaPxnmP9yAvhIxLTXHXa3rL36JL+GcgpQtlSaKVaZEEZI1rNSZE1wn7cXNnWPe+iNbQeXNdwAI7mTklf4l5f7Wdh6b0IbKTS2J8X5dJ4WyInOuVybFZwMBbZEVeGWkeznJ0f3NuuHPV4Yd1i/ljZ9gr4ynR01JntVfHpcHb52XEmWT1aHGhBIZSP9mcMpwFaFQdSKfk3zAWkYkKVzuIKPD9oHswOwLEvlCEdasSQp/MwsgG0yQJtYCjOYAZXh5Q52UWeUfDC4lwXMZxt+KGMUAKNAtYGB4XxFUQ+7GSZ1gUgkwoTVouSpJ7ZlwTdMM4EWZBZCL1wrrelUJS9iKAuDIwkgcsOfighppxXZb1fpz2zlYHjJtIZKHmqulQ5O6Pcwna1QKfNZ2lXBzG6kA3tDgT34h7xp7eXR4N2u6+fYJGly3D2bDCZRDSUIAk30NDeXD1uBDclGeYd9QcTbVmZTph6yCjuKmA1QEkgczqesNbcnb0cAsC6A8MIprmH0LVnPIZ7q+uYOt6pkPRvcdyemDCDHodaPTGc0TS5LRBXrBN1Hjrc6F9Tc4HHJlHzYEpZ/F9yDB2VkyxoHIJ3+TsAYOXl3wKsLVYHuI2dPda6aHOtVs0CP2eVBshepp8DRQLqfUvkiOlrUgYfagN/VHXN1GTlUF2Jh8EbJa2BHK46aXw3+29/wImJasIqi6iA2Qj5iIMUOebvnlLciEeGOipKP2JNDVdhPNqEquhm9vYqXabU+t8tHbvoUE6thFW+M41SghohD1Tr+0wVmoK5kuT3L2G+9Dhkv3N6hqIQR9ImWdwCiEaG72AiLW5txhrwxPDCxUm8L4CclNsIxXSnGJT4h8tJbAtxsl8Vayjl7uDnj/GQy7EOxxktlt5vETQDnrTEym9728NkzDdftMUU2J29yCrTcAvA/NbTjme5fXD4AAAAASUVORK5CYII=") no-repeat center
+
+.bask-delivery
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: -50px
+    +size(34,32)
+    background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAgCAQAAADdhmJCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwTIRi64FH9AAACVklEQVRIx+3UX2jNcRjH8dfhTAs1af6EpWgzCo1Qlj9tK9koF2dulE5KjSizkuZiiPI/JX+aRISLlVI2f5PChfxJNtO2JhnJn2aymL9zcc5pnB12lhsXnqvn9/k+z/v79Hyf3xMIFak0Qs/21VlLfIqXqxBU6aPNOnuEjBZW7Wiio6ARNtmYRCUBYaMTH/VJIj1if6g1ecgf7D/kX4YEexVdYhFSDNDsiNOx2ekdJFWbzz5gqpPmC/vWe8h9c6Neiu1KNdjyNz35oswFFab/DYROYW+dKh4YgWQmldT9upeWGWtPpCcho5KADMOTOO2cw5YXVwZCPa+jmL2WrTVOS/fMySB2OJgE4pMXCdQ3LskP4mO3Mntj9Rb8OicZphmoxS0ffpPS3wwZ2t3WElU6BLogWfaaH/Xf2WObz3GAftZbKy36dd4ajRE3BslVI8VONdpkW26TOYp0/IRIVS3PVZUaDFJoldsK3ST2+oOd8V6OcmS6I1+ZPLt+qWOXPGXy3ZWJcjneO2NwpJJ2s4w0VK7v6owDB6w2WYnL3kURaUoct9d+K0GDhRa7absx2gOhcltxTYFaI63TKGypMjUexfVkvEK7HXdMlh2em+iKudgQCDFWhnpZrlvhEALuCZpoUqTYqLV6oNZXU3SixEGzNJqgpao5iGbNyEU96PTQPDzo9sDDXYwuonoMccOrKj//VnUoBukK1CackloF0olG1sXkrjlpcsIq2ZosMERFQkiFa+45J1OBE5pict8JXSHV+iky22PLXE0IeeqWmRZKs09pZDUuxg8p4Z4IoaPAOwAAAABJRU5ErkJggg==") no-repeat center
+    background-size: cover
+.bask-delivery__rf
+  margin-left: 70px
+  color: $border-color
+  font-family: Calibri, sans-serif
+  display: block
+  font-size: rem(18)
+  text-align: left
+.bask__img
+  +size(60)
+.delete-count,.add-count
+  +size(10,6)
+  cursor: pointer
+.delete-count
+  margin-right: 4px
+  transform: rotate(180deg)
+.add-count
+  margin-left: 4px
+.count-container
+  display: flex
+  align-items: center
+  justify-content: center
+

@@ -1,0 +1,74 @@
+.ordering
+    span.ordering-title Задайте размер скидки, которую получит клиент если
+        |оплатит свой заказ онлайн. По умолчанию размер скидки равен 500 руб
+    .ordering-container
+        .ordering-form
+            .ordering-form__title оформление заказа
+            .ordering-form__description Пожайлуста, заполните форму ниже для завершения заказа
+            .ordering-form__fio
+                span Кому
+                input(type="text" placeholder="Фио").ordering-form__input
+                input(type="text" ).ordering-form__input
+            .ordering-form__address
+                span Куда
+                select.ordering-form__select
+                    option Россия
+                input(type="text" placeholder="Город").ordering-form__input
+                input(type="text" placeholder="Адрес").ordering-form__input
+        .ordering-system
+            .pay-system
+                .pay-system__left
+                    .ordering-form__title  Способ оплаты
+                    .pay-system__mehod
+                        .pay-system__online Оплатить онлай
+                            input(type="checkbox" class="prod" id="online")
+                            label(for="online" class="checkbox-custom__online")
+                        .pay-system__card
+                            span Банковские карты
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                        .pay-system__card
+                            span Электронные деньги
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                        .pay-system__card
+                            span Интернет-банкинг
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                        .pay-system__card
+                            span Кредитование
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                        .pay-system__card
+                            span Баланс телефона
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                        .pay-system__card
+                            span Наличные
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                .pay-system__right
+                    .pay-system__titel Скидка
+                    .pay-system__sum
+                        span 500
+                            img(src="./img/svg/pen.svg").pen-element__white
+
+                    .pay-system__titel Рублей
+                    .pay-system__calendar
+                        img(src="./img/svg/calendar.svg")
+                        | Весь сентябрь
+                    .pay-system__footer * Скидка действует только при оплате онлайн
+            .pay-cash
+                .pay-system__online Оплатить наличными при получении
+                    input(type="checkbox" class="prod" id="cash")
+                    label(for="cash" class="checkbox-custom__online")
+                .pay-system__text Курьеру или в отделении Почты России

@@ -1,0 +1,42 @@
+.container-window
+    .container-item
+        .item-window__empty
+        .item-contend
+            .final-header
+                .final-header__title
+                    img(src="./img/svg/add-to-cart.svg")
+                    |1
+            include final/final-bask
+            .code-promo
+                a(href="javascript:void(0);").btn-final.btn-footer__setting Оформить заказ
+            include three/three-one-product
+            include final/final-ordering
+            .code-promo
+                a(href="javascript:void(0);").btn-final.btn-footer__setting Сделать заказ
+            .content-info
+                .footer-info__logo
+                    img(src="./img/logo.png")
+                .footer-info__address
+                    .info-header
+                        .info-header__phone
+                            img(src="./img/svg/call.svg")
+                            span +7 (499)123-45-67
+                        .info-header__mail
+                            img(src="./img/svg/mail.svg")
+                            span info@shop.ru
+
+                    ul
+                        li ИП Иванов Иван Иванович
+                        li Фактический/почтовый адрес:
+                        li 350000, г. Краснодар, ул. Измаильская, д. 8,
+                        li кабинет № 100
+
+                .footer-info__company
+
+                    ul
+                        li ИНН 123456789123
+                        li ОГРНИП 12345789123456
+                        li Copyright @Shop 2015-2017
+                        li Все права защищены
+                        li
+                            a(href="javascript:void(0);").content-info__private Политика конфиденциальности

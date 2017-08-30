@@ -1,0 +1,60 @@
+@import "../vars"
+@import "../_mixins/option"
+.g-main
+  background-color: $main-work
+  padding-top: 45px
+  padding-bottom: 150px
+.tab-item
+  font-family: CalibriBold,sans-serif
+  display: inline-block
+  width: 20%
+  height: 35px
+  text-align: center
+  text-transform: uppercase
+  line-height: 35px
+  cursor: pointer
+  position: relative
+  transition: background-color .5s ease
+  background-color: $bg-item
+  border-bottom: 1px solid $bord-item
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    +size(35)
+    border-top: 35px solid $main-work
+    border-right: 35px solid transparent
+
+  &:hover
+    background-color: #fff
+.active-item
+    background-color: #fff
+    border-bottom: 0
+    border-right: 1px solid $bord-item
+    &:after
+      content: ''
+      position: absolute
+      left: -7px
+      bottom: 17px
+      width: 49px
+      height: 1px
+      background-color: $bord-item
+      transform: rotate(135deg)
+    a
+      &:after
+        content: ''
+        top: 0
+        right: 0
+        position: absolute
+        height: 1px
+        background-color: $bord-item
+        width: 205px
+
+.tab-container__item
+  width: 100%
+  background-color: #fff
+  display: none
+.enabled
+  display: block
+

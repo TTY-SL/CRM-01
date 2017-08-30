@@ -1,0 +1,122 @@
+@import "../../vars"
+@import "../../_mixins/option"
+.ordering-container
+  margin: 40px 0
+  display: flex
+  justify-content: space-between
+  font-size: rem(18)
+.ordering-form
+  width: 29%
+.ordering-system
+  width: 69%
+.ordering-form__title
+  text-transform: uppercase
+  color: $second-logo
+  font-family: CalibriBold, sans-serif
+  font-size: rem(25)
+.ordering-form__fio, .ordering-form__address
+  span
+    display: block
+    text-transform: uppercase
+    margin: 10px 0
+    font-family: CalibriBold, sans-serif
+    font-size: rem(18)
+.ordering-form__input,.ordering-form__select
+  font-size: rem(18)
+  width: 100%
+  margin: 6px 0
+  padding: 5px 15px
+  border: 1px solid $bord-item
+.pay-system
+  display: flex
+  justify-content: space-between
+.pay-system__left
+  width: 60%
+  background-color: $illustrate-color
+  padding: 10px 10px 0 10px
+.pay-system__right
+  width: 40%
+.pay-system__mehod
+  padding-left: 50px
+
+.pay-system__card
+  display: flex
+  align-items: center
+  width: 100%
+  span
+    white-space: nowrap
+  img
+    width: 40px
+    margin-left: 10px
+input[type="checkbox"].prod
+  &:checked
+    &~.checkbox-custom__online
+      border: 1px solid $second-logo
+      &:after
+        content: ''
+        position: absolute
+        background: url("../img/svg/check-black.svg") no-repeat center
+        background-size: cover
+        top: 2px
+        right: 2px
+        bottom: 2px
+        left: 2px
+.checkbox-custom__online
+  cursor: pointer
+  position: absolute
+  left: -30px
+  top: 2px
+  width: 20px
+  height: 20px
+  border: 1px solid $border-color
+.pay-system__right
+  background-color: $second-logo
+  padding: 10px 30px 10px
+  text-align: center
+  color: $color-white
+.pay-system__titel
+  font-family: CalibriBold, sans-serif
+  font-size: rem(60)
+  text-transform: uppercase
+  line-height: 0.8
+.pay-system__sum
+  font-family: CalibriBold, sans-serif
+  font-size: rem(150)
+  line-height: 0.8
+  position: relative
+.pay-system__calendar
+  background-color: $second-logo
+  font-weight: 600
+  font-size: rem(25)
+  text-transform: uppercase
+  margin: 15px 0
+  position: relative
+  img
+    position: absolute
+    top: -7px
+    left: 4px
+    width: 40px
+.pay-system__footer
+  text-align: left
+  font-size: rem(12)
+.pay-cash
+  padding: 0 60px
+  border-bottom: 1px solid $border-color
+.pay-system__text
+  margin-top: 2px
+  padding-bottom: 4px
+  font-size: rem(16)
+.pay-system__online
+  font-family: CalibriBold
+  margin-top: 13px
+  font-size: rem(18)
+  position: relative
+.pen-element__white
+  top: 0
+  right: 0
+  position: absolute
+  +size(30)
+  border: 1px solid $bg-item
+  cursor: pointer
+  background-color: $color-white
+

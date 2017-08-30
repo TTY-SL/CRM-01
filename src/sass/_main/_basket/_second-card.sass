@@ -1,0 +1,269 @@
+@import "../../vars"
+@import "../../_mixins/option"
+.card-product
+  width: 100%
+  margin-top: 40px
+  padding: 10px 20px 20px 30px
+  border: 1px solid $border-color
+  font-size: rem(18)
+.card-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  border-bottom: 1px solid $border-color
+  padding-bottom: 15px
+.card-header__name
+  font-size: rem(25)
+  font-family: CalibriBold, sans-serif
+  text-transform: uppercase
+.card-settings
+  display: flex
+  justify-content: space-between
+  width: 100%
+.card-setting__45
+  width: 44%
+.card-setting__35
+  width: 34%
+.card-setting__20
+  width: 19%
+.card-setting__name, .card-setting__name-color, .card-setting__help
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: rem(22)
+  font-family: CalibriBold, sans-serif
+  margin-top: 25px
+.card-setting__name
+  margin-bottom: 20px
+.card-setting__help
+  margin-bottom: 20px
+  justify-content: inherit
+.help
+  +size(25)
+  margin-left: 20px
+  margin-top: 5px
+  text-align: center
+  border-radius: 50%
+  font-family: CalibriBold, sans-serif
+  border: 1px solid $color-green
+  line-height: 25px
+  font-size: rem(20)
+.card-setting__name__last
+  margin-bottom: 20px
+.card-setting__product,.card-setting__price
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: rem(18)
+.card-setting__artic
+  width: 29%
+  span
+    display: block
+    margin-bottom: 5px
+.card-setting__artic__footer
+  width: 30%
+.card-setting__name-product
+  width: 69%
+  span
+    display: block
+    margin-bottom: 5px
+.card-setting__name-product__footer
+  width: 68%
+.card-setting__input
+  width: 100%
+  padding: 10px 15px
+  border: 1px solid $bord-item
+  font-size: rem(18)
+.card-setting__category
+  width: 100%
+  padding: 10px 15px
+  border: 1px solid $bord-item
+  font-size: rem(18)
+.card-setting__check
+  position: relative
+.card-setting__check
+  width: 49%
+.card-setting__accompanying
+  display: flex
+  flex-direction: column
+  margin-top: 40px
+  padding: 30px 20px 20px
+  border: 1px solid $bord-item
+  position: relative
+.setting-mas__container
+  position: relative
+  width: 70%
+  border: 1px solid $bord-item
+  padding: 8px
+  .product__contend-close
+    line-height: 28px
+    border: 1px solid $bord-item
+.card-setting__price
+  display: flex
+  justify-content: space-between
+.card-setting__price__old, .card-setting__price__new
+  width: 49%
+  span
+    display: block
+    margin-bottom: 5px
+.card-setting__description
+  span
+    display: block
+    margin: 5px 0
+.card-setting__description__val
+  width: 100%
+  height: 100px
+  padding: 10px 15px
+  outline: none
+  font-size: rem(18)
+  border: 1px solid $bord-item
+  padding: 10px
+.btn-setting
+  padding: 9px 28px
+.btn-footer__setting
+  padding: 9px 27px
+.btn-footer__setting
+  margin-bottom: 20px
+  margin-left: 10px
+.setting-mas__input
+  width: 40%
+  border: 0
+  padding: 3px
+.card-setting__mas
+  width: 35%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-family: Calibri,sans-serif
+  font-size: rem(18)
+  span
+    width: 20%
+.card-setting__characteristic
+  width: 100%
+  padding: 10px
+  border: 1px solid $bord-item
+  margin-bottom: 15px
+  position: relative
+.element__pen
+  top: 50%
+  transform: translateY(-50%)
+  background: url("../img/svg/pen.svg") no-repeat center
+  background-size: 25px
+.element-table
+  position: absolute
+  right: 5px
+  +size(30)
+  border: 1px solid $bord-item
+  cursor: pointer
+.element-table__pen
+  top: 50%
+  transform: translateY(-50%)
+  background: url("../img/svg/pen.svg") no-repeat center
+  background-size: 25px
+.product__contend-close-big
+  border: 1px solid $bord-item
+  +size(30)
+  position: absolute
+  top: 5px
+  right: 5px
+  background-color: $color-white
+  text-align: center
+  cursor: pointer
+  img
+    width: 20px
+    +absolute-center
+.setting-characteristic__container
+  width: 90%
+  display: flex
+  justify-content: space-between
+.setting-characteristic__color, .setting-characteristic__new
+  border: 1px solid $bord-item
+  display: flex
+  position: relative
+
+  width: 100%
+  margin-bottom: 10px
+  &:last-child
+    margin: 0
+.setting-characteristic__color
+  padding: 9px
+.setting-characteristic__new
+  padding: 5px
+.setting-characteristic__first
+  width: 39%
+.setting-characteristic__second
+  width: 44%
+.setting-characteristic__empty
+  height: 52px
+.element-color
+  +size(30)
+  margin-right: 10px
+.element-color__black
+  background-color: #111
+.element-color__red
+  background-color: $color-red
+
+
+.card-setting__accompanying__check
+  position: absolute
+  padding-left: 3px
+  top: -15px
+  left: -5px
+  width: 218px
+  height: 25px
+  background-color: #fff
+.setting-characteristic__add
+  border: 1px solid $color-green
+  position: relative
+  +size(42)
+  img
+    +absolute-center
+    +size(30)
+.card-setting__price__val
+  width: 53%
+  span
+    display: block
+    margin-bottom: 5px
+.card-setting__price__currency
+  width: 30%
+  span
+    display: block
+    margin-bottom: 5px
+.pop-setting__add
+  +size(43)
+  cursor: pointer
+  border: 1px solid $color-green
+  text-align: center
+
+  position: relative
+  img
+    +absolute-center
+    +size(30)
+.card-setting__price__one
+  display: flex
+  font-size: rem(18)
+  margin-top: 15px
+  .card-setting__price__val
+    margin-right: 5px
+.card-setting__price__internal
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: rem(18)
+  margin-top: 10px
+
+.card-setting__price
+  margin-top: 10px
+  .pop-setting__add
+    +size(43)
+    cursor: pointer
+    margin-top: 28px
+    border: 1px solid $color-green
+.card-footer
+  border-top: 1px solid $bord-item
+  text-align: right
+  margin-top: 15px
+  padding-top: 15px
+  font-size: rem(18)
+

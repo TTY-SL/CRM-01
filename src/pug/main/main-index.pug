@@ -1,0 +1,21 @@
+section.g-main
+    .container
+        ul.tab-nav
+            li(show-tab="basket").tab-item.active-item
+                a(href="javascript:void(0);") мои корзины
+            li(show-tab="promotional").tab-item
+                a(href="javascript:void(0);") Промокоды
+            li(show-tab="geo").tab-item
+                a(href="javascript:void(0);") ГЕО
+            li(show-tab="footer__nav").tab-item
+                a(href="javascript:void(0);") футер
+            li(show-tab="landing").tab-item
+                a(href="javascript:void(0);") защита landing page
+        .tab-container
+            .tab-container__item.basket.enabled
+                include tab/basket
+            .tab-container__item.promotional
+                include tab/promotion
+            .tab-container__item.geo 12
+            .tab-container__item.footer__nav 23
+            .tab-container__item.landing 34

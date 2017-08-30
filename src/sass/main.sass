@@ -1,0 +1,57 @@
+@import "libs"
+@import "vars"
+@import "_mixins/option"
+html
+	font-size: 16px
+body
+	font-family: Calibri, sans-serif
+	margin: 0
+	overflow-x: hidden
+	color: #333333
+
+h1,h2,h3,h4,h5,h6
+	margin: 0
+ul,li
+	margin: 0
+	padding: 0
+	list-style-type: none
+p
+	margin: 0
+a
+	text-decoration: none
+	color: black
+	outline: none
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align: middle
+textarea
+	resize: none
+section
+	position: relative
+input,
+select,
+button
+	outline: none
+input,
+select
+	color: #333333
+*, *:before, *:after
+	box-sizing: border-box
+
+.container
+	width: 1200px
+	margin: 0 auto
+
+@import "_header/header"
+@import "_footer/footer"
+@import "_main/promotion"
+@import "_main/main-index"
+@import "_popup/popup-promotion"
+@import "_main/basket"
+
+
+@import "media" // Всегда в конце

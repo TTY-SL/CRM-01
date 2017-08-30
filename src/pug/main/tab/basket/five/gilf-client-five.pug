@@ -1,0 +1,141 @@
+p Выберите товар из списка, который будете дарить в качестве подарка при онлайн оплате клиентом своего заказа.
+    br
+    |Обратите внимание: Вы можете выбрать только один товар для одной корзины.
+.nav-bar
+    .nav-burger
+        span.nav-burger__elemet
+        .nav-burger__container
+            .nav-burger__menu
+                ul
+                    li
+                        a(href="javascript:void(0);") Портмоне
+                    li
+                        a(href="javascript:void(0);") Часы
+                    li
+                        a(href="javascript:void(0);") Детские игрушки
+    .nav-prev
+        a(href="javascript:void(0);").btn.btn-prev показать товары topzakazz
+        input(type="text" placeholder="Введите наименование товара").nav-prev__val
+        .nav-prev__search
+            img(src="./img/svg/magnifying.svg")
+.item-products
+    .slider-products
+        .slider-product
+            .product__contend
+                input(type="checkbox" class="prod" id="product")
+                label(for="product" class="checkbox-custom")
+                img(src="./img/portm.png")
+                .detail Подробнее
+            spna.product__name Портмоне Wild  Alligator
+        .slider-product
+            .product__contend.empty__product
+                input(type="checkbox" class="prod" id="product1")
+                label(for="product1" class="checkbox-custom ")
+                .product__question ?
+                .product__text Товар не создан
+                .detail Подробнее
+        .slider-product
+            .product__contend.empty__product
+                input(type="checkbox" class="prod" id="product2")
+                label(for="product2" class="checkbox-custom ")
+                .product__question ?
+                .product__text Товар не создан
+                .detail Подробнее
+        .slider-product
+            .product__add
+                .product__info Вы можете  создать больше  товаров на  тарифном плане
+                .product__profi Профи
+                a(href="javascript:void(0);").btn-add перейти
+
+        .slider-product
+            .product__add
+                .product__info Вы можете  создать больше  товаров на  тарифном плане
+                .product__profi Профи
+                a(href="javascript:void(0);").btn-add перейти
+        .slider-product
+            .product__add
+                .product__info Вы можете  создать больше  товаров на  тарифном плане
+                .product__profi Профи
+                a(href="javascript:void(0);").btn-add перейти
+.illustrate-container
+    .illustrate-container__contend
+        span 1.
+        | Предложить клиенту
+        span  скидку
+        |при онлайн оплате своего заказа
+    .illustrate-container__check
+        input(type="checkbox" id="ckeck5" class="check-elemt")
+        label(for="ckeck5" class="label-elemt") Toggle
+.ordering
+    span.ordering-title__second Вы можете выбрать/отредактировать фотографию на баннере, задать первоначальную стоимость товара
+        |и отредактировать текст
+    .ordering-container
+        .ordering-form
+            .ordering-form__title оформление заказа
+            .ordering-form__description Пожайлуста, заполните форму ниже для завершения заказа
+            .ordering-form__fio
+                span Кому
+                input(type="text" placeholder="Фио").ordering-form__input
+                input(type="text" ).ordering-form__input
+            .ordering-form__address
+                span Куда
+                select.ordering-form__select
+                    option Россия
+                input(type="text" placeholder="Город").ordering-form__input
+                input(type="text" placeholder="Адрес").ordering-form__input
+        .ordering-system
+            .pay-system
+                .pay-system__left
+                    .ordering-form__title  Способ оплаты
+                    .pay-system__mehod
+                        .pay-system__online Оплатить онлай
+                            input(type="checkbox" class="prod" id="online")
+                            label(for="online" class="checkbox-custom__online")
+                        .pay-system__card
+                            span Банковские карты
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                        .pay-system__card
+                            span Электронные деньги
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                        .pay-system__card
+                            span Интернет-банкинг
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                        .pay-system__card
+                            span Кредитование
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                        .pay-system__card
+                            span Баланс телефона
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                        .pay-system__card
+                            span Наличные
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                            img(src="./img/svg/visa.svg")
+                .pay-system__right
+                    .pay-system__img
+                        img(src="./img/cash.png").system__img
+                        img(src="./img/svg/pen.svg").pen-element__white
+                    .pay-system__descriptiom
+                        |Портмоне wild alligator
+                        img(src="./img/svg/pen.svg").pen-element__white
+                    .pay-system__gift в подарок
+                    .pay-system__price 1 720 руб.
+                        img(src="./img/svg/pen.svg").pen-element__white
+            .pay-cash
+                .pay-system__online Оплатить наличными при получении
+                    input(type="checkbox" class="prod" id="cash")
+                    label(for="cash" class="checkbox-custom__online")
+                .pay-system__text Курьеру или в отделении Почты России

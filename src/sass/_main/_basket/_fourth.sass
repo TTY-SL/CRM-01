@@ -1,0 +1,61 @@
+@import "../../vars"
+@import "../../_mixins/option"
+.list-state
+  margin-top: 30px
+  font-size: rem(18)
+.list-sate__title
+  font-family: CalibriBold, sans-serif
+  font-size: rem(22)
+.list-container, .list-container__silber
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  margin: 20px 0
+.list-container__input
+  width: 88%
+  padding: 9px 25px
+  font-size: rem(18)
+.list-container__silber
+  background-color: $tr-color
+  padding: 15px 10px
+.list__action
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 20%
+.list__state
+  font-family: CalibriBold, sans-serif
+  font-size: rem(18)
+.list__currency
+  width: 45%
+  border: 0
+  background-color: $tr-color
+  height: 35px
+  padding: 2px 10px
+  font-size: rem(18)
+.element__min, .element__plus, .element__done, .element__check
+  +size(30)
+  text-align: center
+  cursor: pointer
+  position: relative
+  img
+    +absolute-center
+    width: 20px
+.element__min
+  border: 1px solid $color-red
+.element__plus
+  border: 1px solid $color-green
+.element__done, .element__check
+  border: 1px solid $bord-item
+.list-container__border
+  padding: 5px 10px
+  border: 1px solid $bord-item
+  .list__action
+    justify-content: inherit
+    width: 15%
+.list-container__border-red
+  padding: 5px 10px
+  border: 1px solid $color-red
+.btn-fourth__setting
+  padding: 3px 22px

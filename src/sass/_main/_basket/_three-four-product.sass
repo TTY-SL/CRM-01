@@ -1,0 +1,42 @@
+@import "../../vars"
+@import "../../_mixins/option"
+.offer-four__slider
+
+.offer-four__slider-item
+  margin: 40px 0
+  width: 200px
+  outline: none
+  .offer-title
+    font-size: rem(23)
+    position: relative
+  .setting-price__prev
+    border: 0
+    margin-top: 15px
+    margin-bottom: 10px
+  .setting-price__new
+    margin: 0 0 15px 0
+
+.offer-four__slider__img
+  +size(200,240)
+  position: relative
+  cursor: pointer
+  overflow: hidden
+  margin-bottom: 10px
+  &:hover
+    .detail
+      visibility: visible
+  img
+    width: 100%
+.btn-bask
+  padding: 10px 20px
+.offer-big-close
+  position: absolute
+  top: -20px
+  right: -80px
+.offer-big__setting
+  font-family: CalibriBold, sans-serif
+  font-size: rem(18)
+  margin-bottom: 10px
+.offer-big__materials
+  margin-bottom: 10px
+

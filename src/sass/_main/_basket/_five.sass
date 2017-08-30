@@ -1,0 +1,29 @@
+@import "../../vars"
+@import "../../_mixins/option"
+.sale-tabe
+  background-color: $illustrate-color
+  border-right: 0
+  position: relative
+  .sale-ser
+    border-bottom: 1px solid $second-logo
+.sale-penultimate
+  .sale-ser
+    border-bottom: 1px solid $second-logo
+.bask-sale,.sale-ser__yellow
+  color: $second-logo
+.clear-line
+  width: 100%
+  height: 60px
+.bask-container__disable
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    width: 100%
+    height: calc(100% - 147px)
+    z-index: 20
+    background-color: rgba($color-white, .4)
+@import "ordering-five"
+@import "gilf-client-five"

@@ -1,0 +1,57 @@
+.main-container
+    .list Список Ваших промокодов
+    .list-prev
+        table
+            tr
+                th &#8470
+                th Наименование
+                th Значение
+                th Доп. значение
+                th Доп. значение copy
+                th LP на которых действует промокод
+            tr
+                td 1
+                td avito_sale
+                td 500 ыруб.
+                td 3000 тенге
+                td 1250 гривен
+                td
+                    span www.topzakazz.ru www.topzakazz.ru
+                    .element.element__pen
+                    .element.element__close
+            tr
+                td 2
+                td avito_sale
+                td 500 ыруб.
+                td 3000 тенге
+                td 1250 гривен
+                td
+                    span www.topzakazz.ru www.topzakazz.ru
+                    .element.element__pen
+                    .element.element__close
+            tr
+                td 3
+                td avito_sale
+                td 500 ыруб.
+                td 3000 тенге
+                td 1250 гривен
+                td
+                    span www.topzakazz.ru www.topzakazz.ru
+                    .element.element__pen
+                    .element.element__close
+    .code-promo
+        a(href="#small-dialog").btn.btn-code.popup-with-zoom-anim промокод
+    .algoritm Алгоритм работы промокода
+    .algoritm-container
+        .algoritm__first 1. Скидка промокода и скидка при онлайн оплате
+            span суммируются
+        .algoritm__first__check
+            input(type="checkbox" id="ckeck1" class="check-elemt")
+            label(for="ckeck1" class="label-elemt") Toggle
+    .algoritm-container
+        .algoritm__second 2. Скидка промокода и скидка при онлайн оплате
+            span.algoritm__second__bold не суммируются
+            span (засчитывается максимальная по номиналу)
+        .algoritm__second__check
+            input(type="checkbox" id="ckeck2" class="check-elemt")
+            label(for="ckeck2" class="label-elemt") Toggle

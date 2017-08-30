@@ -1,0 +1,159 @@
+@import "../../vars"
+@import "../../_mixins/option"
+.offer-one, .offer-four, .offer-big
+  width: 100%
+  border: 1px solid $bord-item
+  background-color: $offer-color
+  padding: 40px 100px 30px
+  margin-top: 50px
+.offer-title
+  text-transform: uppercase
+  font-family: CalibriBold, sans-serif
+  position: relative
+  font-size: rem(25)
+  &:before
+    content: ''
+    position: absolute
+    top: 35px
+    left: 0
+    width: 100px
+    border: 1px solid $bord-item
+
+.offer-slider-conatinert
+  outline: none
+.offer-slider-item
+  display: flex
+  justify-content: space-between
+.offer-sliders
+  margin-top: 60px
+.offer-slider__img
+  +size(300)
+  position: relative
+  cursor: pointer
+  overflow: hidden
+  img
+    width: 100%
+    margin: auto
+  &:hover
+    .detail
+      visibility: visible
+.offer-slider__content
+  width: 60%
+.offer-descrition
+  display: block
+  margin: 20px 0 20px
+  font-family: CalibriLight, sans-serif
+  font-size: rem(18)
+.offer-setting
+  display: flex
+.offer-setting__color,.offer-setting__size
+  width: 50%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: relative
+  span
+    font-family: CalibriBold, sans-serif
+    font-size: rem(18)
+.offer-setting__select
+  width: 65%
+  padding: 5px 10px
+  font-size: rem(20)
+  font-family: CalibriLight, sans-serif
+
+input[type="checkbox"].setting__color
+  position: absolute
+  left: -9999px
+  &:checked
+    &~.setting__checkbox-custom
+      &:after
+        content: ''
+        position: absolute
+        background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAQAAACFMc0DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwSDSJEH4nWAAAAUElEQVQI113OsQ3DQAwDQHoLD6BU8YAZIEU2iAdUlyEuhWH/w1B3BEhFbvdScscP2hrxVBPytcTmp9WMEg+Ntg88uksz4zl5BBeOT8p7oPwBrtxxcYOO1KQAAAAASUVORK5CYII=") no-repeat center
+        background-size: cover
+        top: 6px
+        right: 6px
+        bottom: 6px
+        left: 6px
+.setting__checkbox-custom
+  cursor: pointer
+  position: absolute
+  width: 20px
+  height: 20px
+  top: 10px
+  border: 1px solid $bord-item
+.color__with
+  right: 175px
+  background-color: $color-white
+.color__blue
+  right: 100px
+  background-color: $color-blue
+.color__pink
+  right: 125px
+  background-color: $color-pink
+.color__green
+  right: 150px
+  background-color: $colorGreen
+.offer-setting__price
+  display: flex
+  justify-content: space-between
+  margin-top: 10px
+  padding: 10px
+  width: 100%
+  background-color: $color-logo
+.setting-price
+  font-family: CalibriLight,sans-serif
+  width: 49%
+.setting-price__prev
+  position: relative
+  border-bottom: 1px solid $color-white
+.setting-price__old
+  text-decoration: line-through
+.setting-price__sale
+  display: block
+  margin: 5px 0
+.setting-price__new
+  position: relative
+  margin-top: 20px
+  font-size: rem(23)
+  font-family: CalibriBold, sans-serif
+  text-transform: uppercase
+.offer-setting__price__btn
+  display: flex
+  justify-content: center
+  align-items: flex-end
+  width: 49%
+.btn-green
+  color: $color-white
+  text-transform: uppercase
+  font-family: CalibriBold, sans-serif
+  background-color: $color-green
+.btn-bay
+  padding: 10px 70px
+.arrow-offer__left
+  z-index: 20
+  position: absolute
+  top: 50%
+  left: -100px
+  transform: translateY(-50%)
+.arrow-offer__right
+  position: absolute
+  top: 50%
+  right: -100px
+  transform: translateY(-50%)
+.offer-sliders
+  .slick-dots
+    display: flex
+    justify-content: space-between
+    li
+      display: inline-block
+      width: 20%
+      margin-top: 15px
+      margin-right: 10px
+      cursor: pointer
+      a
+        width: 18%
+        img
+          width: 100%
+      &:last-child
+        margin-right: 0

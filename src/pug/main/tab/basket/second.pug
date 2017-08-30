@@ -1,0 +1,77 @@
+.container-window
+    .container-item
+        .item-window 2
+            .left-line
+        .item-contend
+            .help-element
+                h2 Выберите основной товар из списка товаров
+                span ?
+            p Здесь изображены все товары, которые Вы создадите для быстрого и удобного формирования корзины. Обратите внимание, что любой товар, который Вы создаете, может быть использован как в качестве основного товара, так и в качестве сопутствующего товара (up-sell) и в качестве подарка. Товар нужно создать всего один раз и в дальнейшем использовать в любой категории.
+            .nav-bar
+                .nav-burger
+                    span.nav-burger__elemet
+                    .nav-burger__container
+                        .nav-burger__menu
+                            ul
+                                li
+                                    a(href="javascript:void(0);") Портмоне
+                                li
+                                    a(href="javascript:void(0);") Часы
+                                li
+                                    a(href="javascript:void(0);") Детские игрушки
+                .nav-prev
+                    a(href="javascript:void(0);").btn.btn-prev показать товары topzakazz
+                    input(type="text" placeholder="Введите наименование товара").nav-prev__val
+                    .nav-prev__search
+                        img(src="./img/svg/magnifying.svg")
+            .item-products
+                .slider-products
+                    .slider-product
+                        .product__contend
+                            input(type="checkbox" class="prod" id="product")
+                            label(for="product" class="checkbox-custom")
+                            img(src="./img/portm.png")
+                            .detail Подробнее
+                        spna.product__name Портмоне Wild  Alligator
+                    .slider-product
+                        .product__contend.empty__product
+                            input(type="checkbox" class="prod" id="product1")
+                            label(for="product1" class="checkbox-custom ")
+                            .product__question ?
+                            .product__text Товар не создан
+                            .detail Подробнее
+                    .slider-product
+                        .product__contend.empty__product
+                            input(type="checkbox" class="prod" id="product2")
+                            label(for="product2" class="checkbox-custom ")
+                            .product__question ?
+                            .product__text Товар не создан
+                            .detail Подробнее
+                    .slider-product
+                        .product__add
+
+                            .product__info Вы можете  создать больше  товаров на  тарифном плане
+                            .product__profi Профи
+                            a(href="javascript:void(0);").btn-add перейти
+
+                    .slider-product
+                        .product__add
+
+                            .product__info Вы можете  создать больше  товаров на  тарифном плане
+                            .product__profi Профи
+                            a(href="javascript:void(0);").btn-add перейти
+                    .slider-product
+                        .product__add
+
+                            .product__info Вы можете  создать больше  товаров на  тарифном плане
+                            .product__profi Профи
+                            a(href="javascript:void(0);").btn-add перейти
+            .code-promo
+                a(href="javascript:void(0);").btn-black.btn-code добавить товар
+            include second/second-card
+            include second/bask-card
+        .step-back Вернуться к шагу №1
+
+    .footer-window
+        .question Все готово?
+        a(href="javascript:void(0);").btn.btn-next__stage Следующий этап

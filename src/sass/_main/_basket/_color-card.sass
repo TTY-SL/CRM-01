@@ -1,0 +1,98 @@
+@import "../../vars"
+@import "../../_mixins/option"
+.card-setting__container
+  width: 94%
+.check-color
+  position: relative
+  height: 30px
+  margin-bottom: 10px
+input[type="checkbox"].setting__color
+  position: absolute
+  left: -9999px
+  &:checked
+    &~.setting-check__color
+      &:after
+        content: ''
+        position: absolute
+        background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAQAAACFMc0DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBwSDSJEH4nWAAAAUElEQVQI113OsQ3DQAwDQHoLD6BU8YAZIEU2iAdUlyEuhWH/w1B3BEhFbvdScscP2hrxVBPytcTmp9WMEg+Ntg88uksz4zl5BBeOT8p7oPwBrtxxcYOO1KQAAAAASUVORK5CYII=") no-repeat center
+        background-size: cover
+        top: 4px
+        right: 4px
+        bottom: 4px
+        left: 4px
+.setting-check__color
+  cursor: pointer
+  position: absolute
+  +size(20)
+  top: 10px
+  border: 1px solid $bord-item
+.color__black
+  background-color: #111
+  left: 0
+.color__red
+  background-color: $color-red
+  left: 25px
+.product__contend-close
+  +size(20)
+  position: absolute
+  top: 5px
+  right: 5px
+  background-color: $color-white
+  text-align: center
+  cursor: pointer
+  img
+    width: 15px
+    +absolute-center
+.add-product
+  position: absolute
+  +size(35)
+  +absolute-center
+  background-color: $border-color
+  border-radius: 7px
+  &:after
+    content: ''
+    position: absolute
+    +absolute-center
+    height: 15px
+    border: 1px solid $color-white
+  &:before
+    content: ''
+    position: absolute
+    +absolute-center
+    width: 15px
+    border: 1px solid $color-white
+.add-product__text
+  font-size: rem(15)
+  margin-top: 10px
+.add-btn
+  margin-top: 20px
+.btn-code
+  position: relative
+  padding: 10px 10px 10px 40px
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 14px
+    +size(20)
+    background:  url("../img/svg/rounded-add-button.svg") no-repeat center
+    background-size: cover
+.slider-products__bar
+  margin-top: 10px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+.products-bar__item
+  width: 30%
+  height: 68px
+  overflow: hidden
+  border: 1px solid $border-color
+  margin-bottom: 10px
+  text-align: center
+.products-bar__item-big
+  width: 64%
+  height: 68px
+  overflow: hidden
+  border: 1px solid $border-color
+  text-align: center

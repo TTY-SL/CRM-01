@@ -1,0 +1,19 @@
+@function rem($size)
+  @return ($size / 16) + rem
+@mixin absolute-center()
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+@mixin absolute-all($num)
+	position: absolute
+	top: $num + px
+	bottom: $num + px
+	right: $num + px
+	left: $num + px
+@mixin size($a, $b: false)
+	width: $a + px
+	@if $b
+		height: $b + px
+	@else
+		height: $a + px

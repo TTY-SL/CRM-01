@@ -1,0 +1,66 @@
+@import "../vars"
+@import "../_mixins/option"
+.news
+  background-color: $bg-top
+  padding-bottom: 50px
+.news-titel
+  font-family: CalibriBold, sans-serif
+  padding: 40px 0 55px 0
+  font-size: rem(25)
+  span
+    padding-left: 5px
+    text-transform: uppercase
+.slider
+  width: 90%
+  margin: 0 auto
+  position: relative
+.slider-item
+  +size(350,200)
+  margin-right: 15px
+  border: 1px $color-btn-account solid
+.slick-arrow
+  cursor: pointer
+  +size(40,50)
+  border: 0
+  background-color: transparent
+.slick-prev
+  position: absolute
+  left: -40px
+  top: 50%
+  transform: translateY(-50%)
+.slick-next
+  position: absolute
+  right: -25px
+  top: 50%
+  transform: translateY(-50%)
+.footer
+  background-color: $text-color
+  padding: 35px 0 30px 0
+.footer-conten
+  display: flex
+  justify-content: space-between
+.division
+  color: $color-logo
+  font-family: CalibriLight, sans-serif
+  text-transform: uppercase
+  margin-top: 20px
+  font-size: rem(15)
+  width: 200px
+.footer-copyright
+  font-family: CalibriLight, sans-serif
+  text-align: right
+  color: $color-logo
+.copyright__company
+  width: 180px
+  display: inline-block
+
+.footer__confidentiality
+  margin-top: 20px
+  a
+    color: $color-logo
+    border-bottom: 1px $color-logo solid
+.logo-footer
+  width: 168px
+  height: 28px
+  img
+    width: 100%
